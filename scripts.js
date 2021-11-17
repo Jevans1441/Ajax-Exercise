@@ -15,13 +15,14 @@ fetch(
     for (let i = 0; i < keys.length; i++) {
       let key = keys[i];
       // let value = body.main[key];
+      console.log(body);
     }
-    // city.innerHTML = body.name;
-    // weather.innerHTML = body.main.temp + "°";
-    // feelsLike.innerHTML = body.main.feels_like;
-    // lows.innerHTML = body.main.temp_min;
-    // highs.innerHTML = body.main.temp_max;
-    // winds.innerHTML = body.wind.speed;
+    city.innerHTML = body.name;
+    weather.innerHTML = body.main.temp + "°";
+    feelsLike.innerHTML = body.main.feels_like;
+    lows.innerHTML = body.main.temp_min;
+    highs.innerHTML = body.main.temp_max;
+    winds.innerHTML = body.wind.speed;
     test.innerText = Object.entries(keys);
     console.log(Object.keys(body.main));
   });
